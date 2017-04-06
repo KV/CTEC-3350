@@ -1,0 +1,37 @@
+
+@charset "utf-8";
+th
+{
+  
+ background: black;
+
+  color: white;
+}
+  caption
+{
+    background-color: grey;
+  }
+tr:nth-of-type(odd) 
+{
+  background-color:;
+ 
+}
+border
+{
+	  border-collapse: collapse;
+  }
+th
+{
+  font-family: san-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+td
+{
+  padding: 12px;
+  
+}
+/* CSS Document */
+
+/* CSS Document */
+
