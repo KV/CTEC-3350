@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form_Exercise</title>
+
+<link href="form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="formwrapper">
+<form>
+  <fieldset>
+<h1>Contact</h1>
+<label for="username">Username:</label>
+<input name="username" type="text" size="40" maxlength="100">
+<label for="email">Email:</label>
+<input name="email" type="text" size="40" maxlength="100">
+<label for="password">Password:</label>
+<input name="password" type="text" class="password" size="40" maxlength="100"><br>
+<label for="password">Confirm Password:</label>
+<input name="password" type="text" class="password" size="40" maxlength="100"><br>
+<label for="favorite-weekday">Favorite Day of the Week</label>
+<select name="favorite-weekday" id="favorite-weekday">
+  <option value="Sun">Sunday</option>
+  <option value="Mon">Monday</option>
+  <option value="Tue">Tuesday</option>
+  <option value="Wed">Wednesday</option>
+  <option value="Thu">Thursday</option>
+  <option value="Fri">Friday</option>
+  <option value="Sat">Saturday</option>
+</select><br>
+
+<label for="social-media"> Favorite Social Media Platform:</label>
+<br>
+<label for="facebook" class="social">Facebook</label>
+  <input type="checkbox">
+<label for="twitter" class="social">Twitter</label>
+  <input type="checkbox" id="form_twitter">
+<label for="checkbox">Recieve Email Updates:</label>
+  <input type="checkbox">
+<label for="message">Message:</label>
+<textarea name="message" cols="40" rows="10"></textarea><br>
+<input class="send" name="submit" type="submit" value="Send">
+</fieldset>
+
+
+
+
+</form>
+
+</div>
+
+</body>
+</html>

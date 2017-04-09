@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+#formwrapper {
+	width:500px;
+	height:800px;
+	align-content:center;
+}
+form {
+	align-self:center;
+		background-color:#f29107;
+    background-size: 600px 685px;
+    background-repeat: no-repeat; 
+	border: thick solid #2E2526; position:absolute;		
+	
+
+	width:500px;
+	height:auto;
+	
+}
+fieldset {
+	align-content:center;
+	border:none;
+	padding-bottom:10px;
+}
+h1 {
+	margin-top:10px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:50px;
+	color:#FFFFFF;
+	text-shadow:#000000;
+	width:185px;
+	height:60px;
+}
+label {
+	   float: left;
+       width: 450px;
+       text-align: left;
+	   display:block;
+	   font-family:"Trebuchet MS", Helvetica, sans-serif;
+	   font-size:15px;
+	   color:#FFF0F1;
+	   margin-top:5px;
+	   margin-right:0px;
+	   margin-bottom:5px;
+	   margin-left:0px;
+}
+input{
+	width:400px;
+	margin-bottom:10px;
+}
+textarea {
+	width:400px;
+	margin-bottom:10px;
+}
+.send {
+	width:50px;
+	height:20px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif; 
+	color:#FFF;
+	font-weight:bold;
+	background-color:#6CF;
+	float: left;
+	
+}
+.password {
+	width:200px;
+	margin-bottom:10px;
+}
+.updates {
+	margin-left:10px;
+	float:inherit;
+	
+}
+
+.social{
+	color:lightblue;
+}
+
+
+/* CSS Document */
+
