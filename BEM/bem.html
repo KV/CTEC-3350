@@ -1,0 +1,445 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/image 1.jpeg','images/image 5.jpeg','images/image 7.jpg','images/image 4.jpeg','images/image 3.jpeg','images/image 9.jpg')">
+
+<img src="bem-3.jpg" alt="images" style="width:500px; height:300px;"> <br>
+<code>
+.gallery <br>
+.gallery-container{} <br>
+.gallery-title {} <br>
+.gallery-title emphasized <br>
+.gallery-pic <br>
+.gallery-pic -- small <br>
+.gallery-pic-caption <br>
+/* for every pictures */
+
+<xmp>
+
+HTML FOR GALLERY
+
+<table style="background-color:black; margin-left:auto; 
+margin-right:auto; margin-top:50px;"width="620" border="1" cellspacing="0" cellpadding="2">
+  <caption style="font-size:50px; color:#B86616; font-style: bold;">
+    Java Jam Coffee Gallery
+  </caption>
+  <tbody>
+    <tr>
+      <th rowspan="3" scope="row"><img src="images/image 1.jpeg" alt="" width="1124" height="750" id="main"/></th>
+      <td><a href="javascript:;" onClick="MM_swapImage('main','','images/image 1.jpeg',1)"><img src="images/image 1 - Copy.jpeg" alt="" width="300" height="200" id="t1" border="0"/></a></td>
+      <td><a href="javascript:;" onClick="MM_swapImage('main','','images/image 5.jpeg',1)"><img src="images/image 5 - Copy.jpeg" alt="" width="300" height="200" id="t2" border="0"/></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:;" onClick="MM_swapImage('main','','images/image 7.jpg',1)"><img src="images/image 7 - Copy.jpg" alt="" width="300" height="200" id="t3" border="0"/></a></td>
+      <td><a href="javascript:;" onClick="MM_swapImage('main','','images/image 4.jpeg',1)"><img src="images/image 4-Copy.jpeg" alt="" width="300" height="200" id="t4" border="0"/></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:;" onClick="MM_swapImage('main','','images/image 3.jpeg',1)"><img src="images/image 3 - Copy.jpeg" alt="" width="300" height="200" id="t5" border="0"/></a></td>
+      <td><a href="javascript:;" onClick="MM_swapImage('main','','images/image 9.jpg',1)"><img src="images/image 9 - Copy.jpg" alt="" width="300" height="195" id="t6" border="0"/></a></td>
+    </tr>
+  </tbody>
+</table>
+
+STYLES FOR GALLERY
+
+.table {
+	background-color:black;
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top:50px;
+ 
+}
+
+</xmp>
+
+</code>
+<p></p>
+
+
+<img src="Bem-1.jpg" alt="images" style="width:500px; height:300px;">
+<br>
+<code>
+.bio
+.bio-container { } <br>
+.bio-title { } <br>
+.bio-title--emphasized { } <br>
+.bio-title--reversed
+
+<xmp>
+
+HTML FOR BIO 
+
+<div>
+
+<div class="bio-container" align="center">
+  <div class="bio-title" align="center">About Me</div>
+    <div class="bio-pic">
+<img src="bio-pic.jpg" width="300" height="300" alt=""/>
+    </div>
+      <div class="bio-discription" align="left">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ornare orci in accumsan. Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat dolor dapibus a. Phasellus scelerisque ligula ante, et pellentesque nunc dictum fringilla. Nulla eros nisi, tincidunt non consequat sit amet, porta ut leo. Morbi a turpis dolor. Donec est metus, ultrices sed sapien et, dignissim suscipit risus. Fusce feugiat eleifend commodo.
+      </div>
+
+ </div>
+ 
+ 
+ 
+ </div>
+ 
+STYLES FOR BIO
+
+.bio-container{
+	 margin: auto;
+    width: 70%;
+   
+    padding: 10px;
+	
+	border: 5px solid #000000;
+	
+	height: 500px;
+	
+
+
+  overflow: hidden;
+
+}
+
+.bio-title {
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:50px;
+	color:#FFB03F;
+	font-weight:bold;
+
+
+}
+.bio-pic{
+    max-width: 500px;
+    float: left;
+    margin: 35px 75px 0 19px;
+}
+
+
+.bio-discription {
+    margin: 53px 25px 0 0;
+    font-size: x-large;
+
+ 
+
+
+}
+
+.bio-description {
+
+	line-height:1.25rem;
+	 color:#222;
+  font-family:Georgia,serif;
+ width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:clip;
+	
+}
+
+
+ 
+ 
+</xmp>
+
+
+
+
+
+</code>
+<p> </p>
+
+<img src="bem-5.jpg" alt="question" style="width:500px; height:300px;"> <br>
+<code>
+.faq <br>
+.faq-container {}<br>
+.faq-content {} <br>
+ 
+ 
+ 
+ <xmp>
+ 
+<h1>FAQ</h1>
+<h2>Table of Contents. Click out to jump to it</h2>
+
+<a href="#question1"> How do I locate your shop?</a><br>
+<a href=""> How do I locate your shop?</a>
+
+
+<a name="question1">How do I sign up for a show?</a>
+</br>
+</br>
+</br></br>
+</br>
+</br>
+</br></br>
+</br>
+</br>
+We are located at the address below.
+Locations to our coffee shop location can be also found on the map.
+If you need further assistance, please give us a call.
+<p>
+Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. </p><p>Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat </p>
+
+<br/>
+
+<a name="question2">How do I locate your shop?</a>
+</br>
+</br>
+</br></br>
+</br>
+</br>
+</br></br>
+</br>
+</br>
+All dates regarding our Music performances can be found on the calendar.
+If you would like to sign up as an artist...
+Locations to our coffee shop location can be also found on the map.
+If you need further assistance, please give us a call.
+<p>
+Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. </p><p>Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat </p>
+
+All dates regarding our Music performances can be found on the calendar.
+If you would like to sign up as an artist...
+Locations to our coffee shop location can be also found on the map.
+If you need further assistance, please give us a call.
+<p>
+Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. </p><p>Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat </p>
+
+All dates regarding our Music performances can be found on the calendar.
+If you would like to sign up as an artist...
+Locations to our coffee shop location can be also found on the map.
+If you need further assistance, please give us a call.
+<p>
+Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. </p><p>Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat </p>
+
+All dates regarding our Music performances can be found on the calendar.
+If you would like to sign up as an artist...
+Locations to our coffee shop location can be also found on the map.
+If you need further assistance, please give us a call.
+<p>
+Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. </p><p>Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat </p>
+
+All dates regarding our Music performances can be found on the calendar.
+If you would like to sign up as an artist...
+Locations to our coffee shop location can be also found on the map.
+If you need further assistance, please give us a call.
+<p>
+Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. </p><p>Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat </p>
+
+All dates regarding our Music performances can be found on the calendar.
+If you would like to sign up as an artist...
+Locations to our coffee shop location can be also found on the map.
+If you need further assistance, please give us a call.
+<p>
+Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. </p><p>Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat </p>
+
+All dates regarding our Music performances can be found on the calendar.
+If you would like to sign up as an artist...
+Locations to our coffee shop location can be also found on the map.
+If you need further assistance, please give us a call.
+<p>
+Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. </p><p>Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat </p>
+
+All dates regarding our Music performances can be found on the calendar.
+If you would like to sign up as an artist...
+Locations to our coffee shop location can be also found on the map.
+If you need further assistance, please give us a call.
+<p>
+Phasellus id lectus erat. Sed maximus ut orci vitae porttitor. Nulla et consectetur elit. Cras consequat metus vitae egestas bibendum. </p><p>Vivamus eros odio, vehicula sit amet purus ac, sagittis pretium eros. Aliquam pretium mi elit, ac consequat </p>
+
+
+</xmp>
+
+
+</code>
+<p></p>
+
+
+<p></p>
+<img src="bem-4.jpg" alt="amenities" style="width:500px; height:300px;"> <br>
+<code>
+.activity <br>
+.activity-container{} <br>
+.activity-grid{} <br>
+.activity-grid-img{} <br>
+.activity-title {} <br>
+.activity-title emphasized <br>
+.activity-desription <br>
+.activity-pic 1 <br>
+.activity-pic -- small <br>
+.activity-pic-caption <br>
+.activity-pic 2 <br>
+.activity-pic -- small <br>
+.activity-pic-caption <br>
+.activity-pic 3 <br>
+.activity-pic -- small <br>
+.activity-pic-caption <br>
+.activity-pic 4 <br>
+.activity-pic -- small <br>
+.activity-pic-caption <br>
+.activity-pic 5 <br>
+.activity-pic -- small <br>
+.activity-pic-caption <br>
+.activity-pic 6 <br>
+.activity-pic -- small <br>
+.activity-pic-caption <br>
+
+
+<xmp>
+
+HTML FOR ACTIVITIES
+
+<div class="activities" id="activities" align="center">
+            	<img src="activities.png" alt="" class="banner">
+                <div class="activities-grid">
+
+                    <figure>
+                        <img src="image1.jpg" style="width:520px;height:400px;" alt="abc" border="10" >
+                        <figcaption>
+                          Enjoy Quality Coffee
+                        </figcaption>
+                    </figure>
+
+					          <figure>
+                        <img src="image2.jpg" style="width:520px;height:400px;" alt="abc" border="10">
+                        <figcaption>
+                          Spacious and Confy booths
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="image2.jpg" style="width:520px;height:430px;" alt="abc" border="10">
+                        <figcaption>
+                         Live Band 
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="image4.jpg"style="width:520px;height:430px;"  alt="abc" border="10">
+                        <figcaption>
+                          Beautiful Scenery
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="image5.jpg"style="width:520px;height:430px;"  alt="abc" border="10">
+                        <figcaption>
+                       Peace Section for Study
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="image6.jpg" style="width:520px;height:430px;" alt="abc" border="10">
+                        <figcaption>
+                         Good Music
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="image7.jpg"style="width:520px;height:430px;" alt="abc" border="10">
+                        <figcaption>
+                         Wide Range of Selection
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="image8.jpeg"style="width:520px;height:430px;" alt="abc" border="10">
+                        <figcaption>
+                          Other Favorite Snacks
+                        </figcaption>
+                    </figure>
+
+                    
+
+                </div>
+            </div>
+            
+            
+            STYLES FOR ACTIVITIES
+            
+            .activities {
+	background:url(background1.jpeg) repeat fixed;
+	background-size:cover;
+	margin-bottom:-38px;
+
+}
+
+.banner {
+	margin-top:6.3%;
+	width:100%;
+}
+
+.activities-grid img {
+	width:500px;
+	
+}
+
+.activities-grid {
+	padding-bottom:50px;
+}
+figure {
+  display:inline-block;
+  padding:1px;
+	height: 300px;
+    width: 450px;
+
+}
+figure figcaption{
+	background:rgba(253,137,32,0.9);
+  color:#ECDEC1;
+  text-transform:uppercase;
+  letter-spacing:0.8px;
+  font-weight:600;
+  padding:0.6em;
+  bottom:2%;
+  left: 100%;
+  width:520px;
+  float: center;
+	caption-side: top;
+}
+
+
+
+</xmp>
+
+
+
+
+
+</code>
+
+
+</body>
+</html>
