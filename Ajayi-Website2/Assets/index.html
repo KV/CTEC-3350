@@ -1,0 +1,371 @@
+
+<!doctype html>
+<html>
+<head>
+<style>
+    .scrolloff {
+        pointer-events: none;
+    }
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $('#map').addClass('scrolloff');                // set the mouse events to none when doc is ready
+        
+        $('#overlay').on("mouseup",function(){          // lock it when mouse up
+            $('#map').addClass('scrolloff'); 
+            //somehow the mouseup event doesn't get call...
+        });
+        $('#overlay').on("mousedown",function(){        // when mouse down, set the mouse events free
+            $('#map').removeClass('scrolloff');
+        });
+
+        $("#map").mouseleave(function () {              // becuase the mouse up doesn't work... 
+            $('#map').addClass('scrolloff');            // set the pointer events to none when mouse leaves the map area
+                                                        // or you can do it on some other event
+        });
+        
+    });
+	
+	             // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+	
+	
+</script>
+
+<meta charset="UTF-8">
+
+<title>Java Jam</title>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet"> 
+<script type="text/javascript" src="lightbox.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper" id="wrapper">
+
+
+    	<a href="#wrapper"><img src="images/icons/java-jam-coffee-logo.png" alt="Logo" class="main-logo" ></a>
+		
+    	<header>
+    	
+<nav>
+              
+          <ul>
+                
+                	
+       	    <li><a href="#home">home</a></li>
+                	<li><a href="#menu">Menu</a></li>
+                	<li><a href="#activities">Activities</a></li>
+                	<li><a href="#contact">Contact</a></li>
+                
+                  <li><a href="https://www.facebook.com/" target="_blank"><img src="fbicon.png" alt="Facebook - Link" class="fb-logo"></a></li>
+                  <li><a href="https://twitter.com/" target="_blank"><img src="tw.png" alt="Twitter - Link" class="twitter-logo"></a></li>
+                </ul>
+</nav>
+
+			<div id="home">
+</div>
+        
+        </header>
+        
+      
+
+
+        <main>
+        	
+            <div class="favorites" id="menu">
+            
+            	<h2>Featured Products</h2>
+                   <ul class="flex-container">
+  <li class="flex-item1">CDream</li>
+  <li class="flex-item2">Delight</li>
+  <li class="flex-item3">Legend</li>
+  <li class="flex-item4">Sun</li>
+
+</ul>
+
+ <div >
+            <img src="images/Menuboard.png" width="auto" height="400" frameborder="0" style="width:50%;
+	clear:both;
+	margin: 0 auto 0 auto;
+	background: rgba(253,137,32,0.5);
+	padding: 5px;" allowfullscreen></img>
+            </div>
+               
+            </div>
+           
+
+            <!-- Begin Images Section -->
+            <div class="menu" id="activities">
+            	<h2 class="banner">Activities</h2>
+                <div class="menu-grid">
+
+                    <figure>                 
+                        <a href="images/image 1.jpeg" data-lightbox="gallery"><img src="images/image 1 - Copy.jpeg" style="width:520px;height:400px;" alt="coffee" border="10" ></a>
+                        <figcaption>
+                          Enjoy Quality Coffee
+                        </figcaption>
+                    </figure>
+
+					          <figure>
+                        <a href="images/image 3.jpeg" data-lightbox="gallery"><img src="images/image 3 - Copy.jpeg" style="width:520px;height:400px;" alt="coffee" border="10"></a>
+                        <figcaption>
+                          Spacious and Confy booths
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="images/image 9.jpg" data-lightbox="gallery"><img src="images/image 9 - Copy.jpg" style="width:520px;height:430px;" alt="coffee" border="10"></a>
+                        <figcaption>
+                         Live Band 
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="images/image 4.jpeg" data-lightbox="gallery"><img src="images/image 4-Copy.jpeg"style="width:520px;height:430px;"  alt="coffee" border="10"></a>
+                        <figcaption>
+                          Beautiful Scenery
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="images/image 10.jpg" data-lightbox="gallery"><img src="images/image 10 - copy.jpg"style="width:520px;height:430px;"  alt="coffee" border="10"></a>
+                        <figcaption>
+                       Peace Section for Study
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="images/image 11.jpeg" data-lightbox="gallery"><img src="images/image 11 copy.jpg" style="width:520px;height:430px;" alt="coffee" border="10"></a>
+                        <figcaption>
+                         Good Music
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="images/image 7.jpg" data-lightbox="gallery"><img src="images/image 7 - Copy.jpg"style="width:520px;height:430px;" alt="coffee" border="10"></a>
+                        <figcaption>
+                         Wide Range of Selection
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="images/image 8.jpeg" data-lightbox="gallery"><img src="images/image 8 - Copy.jpeg"style="width:520px;height:430px;" alt="coffee" border="10"></a>
+                        <figcaption>
+                          Other Favorite Snacks
+                        </figcaption>
+                    </figure>
+
+
+                    
+
+                </div>
+            </div>
+            <!-- End Images Section -->
+
+            <!-- Begin Events Section -->
+            	
+            <div class="events">
+            	<h2 class="banner">Live Music Lives Here</h2>
+                <div class="activities-grid">
+            <div class="events">
+          
+                <h3>Dixyland Jazz Band</h3>
+                <img src="images/background 5.jpg" alt="photo" class="event-photo">
+                
+                
+
+
+<table style="width:35.15%">
+  
+  <tr>
+    <td>Activity Type:</td>
+    <th>Jazz October</th>
+    
+  </tr>
+  <tr>
+    <td>Band Name:</td>
+    <th>Dixyland Jazz Band</th>
+    
+  </tr>
+  <tr>
+    <td>Entrance:</td>
+    <th>Free (Donations Accepted)</th>
+    
+  </tr>
+ 
+  </tr><tr>
+    <td>Genre:</td>
+    <th>Jazz</th>
+    
+  </tr><tr>
+    <td>Date:</td>
+    <th>October 1</th>
+    
+  </tr><tr>
+    <td>Time:</td>
+    <th>6PM - 10PM</th>
+    
+  </tr>
+</table>
+
+
+
+
+
+
+				
+                <h3>Spoken Words</h3>
+                <img src="images/poetry.jpeg" alt="photo" class="event-photo">
+                
+   <table style="width:35.15%">
+  
+  <tr>
+    <td>Activity Type:</td>
+    <th>Spoken Words</th>
+    
+  </tr>
+  <tr>
+    <td>Artist:</td>
+    <th>Carleb Ofiga</th>
+    
+  </tr>
+  <tr>
+    <td>Length:</td>
+    <th>1 hour</th>
+    
+  </tr>
+  
+  <tr>
+    <td>Genre:</td>
+    <th>Poetry</th>
+    
+  </tr>
+  <tr>
+    <td>Entrance:</td>
+    <th>Free (Donations Accepted)</th>
+    
+  </tr><tr>
+    <td>Date:</td>
+    <th>July 17</th>
+    
+  </tr><tr>
+    <td>Time:</td>
+    <th>6PM</th>
+    
+  </tr>
+</table>
+            <div class="video">
+                <video controls style=" background:rgba(253,137,32,0.8);
+    ">
+                <source src="videos/A TRIP TO JAMAICA OFFICIAL TRAILER.mp4" type="video/mp4"></source>
+		           
+                </video>
+            </div>
+            
+        </main>
+<!-- End Events Section -->
+
+
+<h2>Store Locator</h2>
+                <div id="contact" style="background-color:#FFFCFC;">
+            
+            <div id="overlay" class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52832.66919343481!2d-118.18329093497852!3d34.14527206676032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c35b7099e5bf%3A0xd2e4b35e1e0433ee!2s1038+E+Colorado+Blvd%2C+Pasadena%2C+CA+91106!5e0!3m2!1sen!2sus!4v1493318159850"  width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            </div>
+
+
+       <!-- Begin Contact Section -->
+        
+       
+        	<div class="contact" id="contact">
+        	<h4> Contact </h4>   
+  
+    <form method="post" action="" class="ccform">
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-user fa-2x"></i></span>
+        <input class="ccformfield" type="text" placeholder="Full Name" required>
+    </div>
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-envelope fa-2x"></i></span>
+        <input class="ccformfield" type="text" placeholder="Email" required>
+    </div>
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-mobile-phone fa-2x"></i></span>
+        <input class="ccformfield" type="text" placeholder="Phone">
+    </div>
+     <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-info fa-2x"></i></span>
+        <input class="ccformfield" type="text" placeholder="Subject" required>
+    </div>
+    <div class="ccfield-prepend">
+        <span class="ccform-addon"><i class="fa fa-comment fa-2x"></i></span>
+        <textarea class="ccformfield" name="comments" rows="8" placeholder="Message" required></textarea>
+    </div>
+    <div class="ccfield-prepend">
+        <input class="ccbtn" type="submit" value="Submit">
+    </div>
+    </form>
+</div>
+			</div>
+            <div align="center" style="margin-top: -68px;">
+        <h2>Java Jam Is Now  Hiring!,</h2>
+        <p> Feel free to pick up an application at our location </p>
+       </div>
+        <!-- End Contact Section -->
+
+<!-- BEGIN FOOTER SECTION -->
+<footer>
+       <center>
+        <div class="logo-footer">
+			<a href="#wrapper"><img src="images/icons/java-jam-coffee-logo.png" alt="Logo" class="logo-2" id="contact"></a>
+		   </div>
+            <div class="email">
+            	<input type="email" name="email" id="email" placeholder="How can I help?" maxlength="60"><button type="submit" class="submit">Search</button>
+            </div>
+            
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                	<li><a href="#menu">Menu</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                	
+                	<li><a href="#contact">Contact</a></li>
+                	<li><a href="sitemap.html">SiteMap</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </div>
+        	
+        
+        <p class="abc">&copy; 2017 Ayo Ajayi. All Rights Reserved.</p>
+			</center>
+        </footer>
+
+<!-- END FOOTER SECTION -->
+
+</body>
+</html>
+
